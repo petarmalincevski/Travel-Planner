@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travel Survey - Voyara</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="js/anketa.js" defer></script>
+    <script src="js/avt.js" defer></script>
+</head>
+
+<body>
+    <header>
+
+        <h1>Voyara</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="destinacii.html">Destinations</a>
+            <a href="anketa.html" class="active">Survey</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+
+        <div id="user-area">
+            <a href="najava.html">Login</a>
+            <a href="registracija.html">Register</a>
+        </div>
+
+    </header>
+
+    <section class="survey-intro">
+
+        <h2>Travel Survey</h2>
+
+        <p>
+            Tell us more about your travel preferences!
+            Your answers will help us understand what travelers enjoy the most.
+        </p>
+
+    </section>
+
+    <main class="survey-page">
+
+        <form id="survey-form">
+
+            <h2>About Your Travels</h2>
+
+            <div class="survey-question">
+
+                <label for="favorite-city">
+                    1. Which city in Macedonia would you most like to visit?
+                </label>
+
+                <select id="favorite-city" name="favorite-city" required>
+
+                    <option value="">Select a city</option>
+                    <option value="Ohrid">Ohrid</option>
+                    <option value="Skopje">Skopje</option>
+                    <option value="Bitola">Bitola</option>
+                    <option value="Resen">Resen</option>
+                    <option value="Struga">Struga</option>
+                    <option value="Krusevo">Krusevo</option>
+
+                </select>
+
+            </div>
+
+            <div class="survey-question">
+
+                <p>2. What type of vacation do you prefer?</p>
+
+                <label>
+                    <input type="radio" name="vacation" value="Relaxation" required>
+                    Relaxation
+                </label>
+
+                <label>
+                    <input type="radio" name="vacation" value="Adventure">
+                    Adventure
+                </label>
+
+                <label>
+                    <input type="radio" name="vacation" value="Cultural">
+                    Cultural tourism
+                </label>
+
+                <label>
+                    <input type="radio" name="vacation" value="Nature">
+                    Nature and hiking
+                </label>
+
+            </div>
+
+            <div class="survey-question">
+
+                <p>3. Who do you usually travel with?</p>
+
+                <label>
+                    <input type="radio" name="company" value="Alone" required>
+                    Alone
+                </label>
+
+                <label>
+                    <input type="radio" name="company" value="Family">
+                    Family
+                </label>
+
+                <label>
+                    <input type="radio" name="company" value="Friends">
+                    Friends
+                </label>
+
+                <label>
+                    <input type="radio" name="company" value="Partner">
+                    Partner
+                </label>
+
+            </div>
+
+            <div class="survey-question">
+
+                <p>4. What activities do you enjoy while traveling?</p>
+
+                <label>
+                    <input type="checkbox" name="activities" value="Swimming">
+                    Swimming
+                </label>
+
+                <label>
+                    <input type="checkbox" name="activities" value="Hiking">
+                    Hiking
+                </label>
+
+                <label>
+                    <input type="checkbox" name="activities" value="Sightseeing">
+                    Sightseeing
+                </label>
+
+                <label>
+                    <input type="checkbox" name="activities" value="Food">
+                    Trying local food
+                </label>
+
+                <label>
+                    <input type="checkbox" name="activities" value="Shopping">
+                    Shopping
+                </label>
+
+            </div>
+            <div class="survey-question">
+
+                <label for="duration">
+                    5. How long do you usually travel?
+                </label>
+
+                <select id="duration" name="duration" required>
+
+                    <option value="">Select duration</option>
+                    <option value="1-2 days">1-2 days</option>
+                    <option value="3-5 days">3-5 days</option>
+                    <option value="1 week">1 week</option>
+                    <option value="More than a week">More than a week</option>
+
+                </select>
+
+            </div>
+
+            <div class="survey-question">
+
+                <label for="budget">
+                    6. What is your approximate travel budget?
+                </label>
+
+                <select id="budget" name="budget" required>
+
+                    <option value="">Select your budget</option>
+                    <option value="Under 100 EUR">Under 100 EUR</option>
+                    <option value="100-300 EUR">100-300 EUR</option>
+                    <option value="300-500 EUR">300-500 EUR</option>
+                    <option value="Over 500 EUR">Over 500 EUR</option>
+
+                </select>
+
+            </div>
+
+            <div class="survey-question">
+
+                <label for="comments">
+                    7. What is your dream travel destination and why?
+                </label>
+
+                <textarea
+                    id="comments"
+                    name="comments"
+                    rows="4"
+                    placeholder="Write your answer here..."
+                ></textarea>
+
+            </div>
+
+
+            <button type="submit">Submit Survey</button>
+
+            <p id="survey-message"></p>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Voyara. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

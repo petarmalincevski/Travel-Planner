@@ -1,0 +1,258 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('sliki/pozadina.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+header div a {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-left: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+header div a:hover {
+    background-color: white;
+    color: black;
+}
+#hero {
+    height: 500px;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)),
+        url('sliki/pozadina.jpg');
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 20px;
+    max-width: 650px;
+    margin: 20px auto 30px;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: orange;
+    color: black;
+    padding: 13px 25px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-button:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 35px;
+    font-weight: bold;
+}
+
+#about {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+#attractions {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 50px 0;
+}
+
+.place-card {
+    background-color: rgba(255, 255, 255, 0.10);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.place-card img {
+    height: 230px;
+    object-fit: cover;
+}
+
+.place-card .card-title {
+    color: orange;
+    font-weight: bold;
+}
+
+.place-card .card-text {
+    color: white;
+    line-height: 1.6;
+}
+
+.activity-box {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    height: 100%;
+}
+
+.activity-box h4 {
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.activity-box p {
+    line-height: 1.6;
+}
+
+#gallery {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 50px 0;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.03);
+}
+
+.back-button {
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: orange;
+    color: black;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h2 {
+        font-size: 38px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    #hero {
+        height: 400px;
+    }
+}
+
+.gallery-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.gallery-actions button,
+.comment-section button {
+    padding: 7px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #263b35;
+    color: white;
+}
+
+.comment-section input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment-section p {
+    background-color: #f1f1f1;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #333;
+}

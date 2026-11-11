@@ -1,0 +1,614 @@
+body {
+    background-image: url('sliki/pozadina.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+nav {
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: orange;
+}
+header div a {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-left: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+header div a:hover {
+    background-color: white;
+    color: black;
+}
+nav a.active {
+    color: orange;
+    pointer-events: none;
+    cursor: default;
+}
+#prv {
+    text-align: center;
+    padding: 126px 21px;
+}
+
+#prv h2 {
+    font-size: 42px;
+}
+
+#prv p {
+    font-size: 18px;
+    margin-bottom: 31px;
+}
+
+#prv a {
+    background-color: orange;
+    color: black;
+    padding: 14px 26px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+#voved {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+#destinaci {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+#destinaci {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+#destinaci .card {
+    background-color: rgba(255, 255, 255, 0.122);
+    border: none;
+    border-radius: 13px;
+    overflow: hidden;
+    color: white;
+}
+#destinaci .card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+#destinaci .card-title {
+    color: white;
+}
+#destinaci .card-text {
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.destination-card {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    border: none;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.destination-card .card-title {
+    color: white;
+}
+
+.destination-card .card-text {
+    color: white;
+}
+
+.destination-card .card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    padding: 40px 20px;
+}
+
+.register-box {
+    width: 400px;
+    padding: 35px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.register-box h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.register-description {
+    color: #cccccc;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+
+/* Registration form */
+
+#register-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#register-form label {
+    margin-top: 12px;
+    margin-bottom: 7px;
+    color: white;
+    font-size: 15px;
+}
+
+#register-form input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #777;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    outline: none;
+}
+
+#register-form input:focus {
+    border: 1px solid orange;
+}
+
+#register-form button {
+    margin-top: 20px;
+    padding: 13px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#register-form button:hover {
+    background-color: darkorange;
+}
+
+#register-message {
+    margin-top: 12px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.login-link {
+    margin-top: 25px;
+    color: white;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+
+    .register-box {
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+    .register-box h2 {
+        font-size: 24px;
+    }
+
+}
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    padding: 40px 20px;
+}
+
+.login-box {
+    width: 400px;
+    padding: 35px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.login-box h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.login-description {
+    color: #cccccc;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#login-form label {
+    margin-top: 12px;
+    margin-bottom: 7px;
+    color: white;
+    font-size: 15px;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #777;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    outline: none;
+}
+
+#login-form input:focus {
+    border: 1px solid orange;
+}
+
+#login-form button {
+    margin-top: 20px;
+    padding: 13px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+    background-color: darkorange;
+}
+
+#login-message {
+    margin-top: 12px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.register-link {
+    margin-top: 25px;
+    color: white;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+
+    .login-box {
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+    .login-box h2 {
+        font-size: 24px;
+    }
+
+}
+
+.profile-name {
+    color: orange;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+#logout-button {
+    padding: 10px 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#logout-button:hover {
+    background-color: white;
+    color: black;
+}
+
+blog-intro {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.blog-intro h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.blog-intro p {
+    font-size: 17px;
+    color: #dddddd;
+}
+
+.places-section {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.places-section h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.places-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.place-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+.place-item img {
+    width: 220px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.place-item h3 {
+    color: orange;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.place-item p {
+    color: white;
+    line-height: 1.6;
+}
+
+.resen-blog {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.resen-blog h2 {
+    font-size: 30px;
+    color: orange;
+    margin-bottom: 25px;
+}
+
+.resen-blog img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.resen-blog p {
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #eeeeee;
+    margin-bottom: 15px;
+}
+@media screen and (max-width: 650px) {
+
+    .place-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .place-item img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .resen-blog {
+        margin: 30px 15px;
+        padding: 20px;
+    }
+
+    .blog-intro h2 {
+        font-size: 28px;
+    }
+
+}
+.survey-intro {
+    text-align: center;
+    padding: 45px 20px;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.survey-intro h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.survey-intro p {
+    font-size: 16px;
+    color: #dddddd;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.survey-page {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+#survey-form {
+    width: 100%;
+    max-width: 750px;
+    padding: 35px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+#survey-form h2 {
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 30px;
+}
+.survey-question {
+    margin-bottom: 28px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.survey-question p,
+.survey-question > label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.survey-question input[type="radio"],
+.survey-question input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: orange;
+}
+
+.survey-question label:has(input) {
+    display: block;
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 12px;
+    color: #eeeeee;
+}
+
+.survey-question select,
+.survey-question textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #777;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.survey-question textarea {
+    resize: vertical;
+}
+
+.survey-question select:focus,
+.survey-question textarea:focus {
+    outline: none;
+    border: 1px solid orange;
+}
+
+#survey-form button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#survey-form button:hover {
+    background-color: darkorange;
+}
+
+#survey-message {
+    text-align: center;
+    margin-top: 15px;
+    color: lightgreen;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 600px) {
+
+    #survey-form {
+        padding: 25px 20px;
+    }
+
+    .survey-intro h2 {
+        font-size: 28px;
+    }
+
+}
